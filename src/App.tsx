@@ -1,9 +1,4 @@
-interface PokemonCard{
-  id: number;
-  image: string;
-  name: string;
-  types: string[];
-}
+
 const data= [
   {
     id: 1,
@@ -59,7 +54,7 @@ function getTypeColor(type: string){
 export const App = () => {
   return <div>
     <div className= "flex flex-wrap bg-blue-200 ">
-      {data.map((item, idx)=>{
+      {data.map((item,)=>{
    return (
     <div>
       {item.id} - {item.name} 
