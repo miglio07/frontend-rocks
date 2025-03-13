@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router";
+
+export const Detail = () => {
+  const {id} = useParams();
+  return <div className="text-6xl">Dettaglio: {id}</div>
+}
 
 export const App = () => {
   const [count, setCount] = useState(0);
-  const [title, setTitle] = useState("geodude");
+  const [title, setTitle] = useState("geoudude");
 
-  return (
+  useEffect(() => {
+    if(count===20){
+      setTitle("hai raggiunto il valore di 20")
+    }
+  },[count])
+
+  return(
     <div className="h-dvh flex flex-col items-center justify-center">
       <div className="bg-white p-8 rounded-md shadow-lg">
         <h1 className="text-center font-bold text-3xl text-blue-400 mb-4">
@@ -16,7 +28,7 @@ export const App = () => {
         <div className="flex flex-col items-center space-y-4">
           <button
             className="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md cursor-pointer hover:bg-blue-600 transition-colors"
-            onClick={() => setCount((count) => count + 1)}
+            onClick={() => setCount((count) => count + 5)}
           >
             Hai premuto il pulsante {count} {count === 1 ? "volta" : "volte"}
           </button>
@@ -27,10 +39,8 @@ export const App = () => {
           >
             Cambia
           </button>
+          <Link to="/frontend-rocks/dettaglio/1">Link alla pagina di dettaglio </Link>
 
-          <p className="text-center">
-            Modifica <code>src/App.tsx</code> e salva per testare l'hot reload
-          </p>
         </div>
       </div>
     </div>
