@@ -7,9 +7,9 @@ interface PokemonCard{
 const data= [
   {
     id: 1,
-    name: "Bulbasaur",
-    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png ",
-    types: ["Grass", "Poison"],
+    name: "Lugia",
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    types: ["Psychic", "Flying"],
   },
 
   {
@@ -26,21 +26,21 @@ id: 3,
 },
 {
 id: 4,
-  name: "BUBS",
-  image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png ",
-  types: ["fire", "water"],
+  name: "Infernape",
+  image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
+  types: ["Fire", "Fighting"],
 },
 {
 id: 5,
-  name: "SQUITRLE",
-  image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png ",
-  types: ["fire", "water"],
+  name: "Darkrai",
+  image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png",
+  types: ["Dark"],
 },
 {
   id: 6,
-    name: "CHARMANDER",
-    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png ",
-    types: ["fire", "poison"],
+    name: "Diancie",
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png",
+    types: ["Fairy", "rock"],
   },
 ];
 const typeC: { [key: string]: string} = {
